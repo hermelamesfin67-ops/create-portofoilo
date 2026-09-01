@@ -3,469 +3,450 @@
 ========================= */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    min-height: 100vh;
-    background: #020f1a;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background: #020f1a;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
 
 /* =========================
    MAIN CONTAINER
 ========================= */
 
 .portfolio {
-    width: 94%;
-    max-width: 1500px;
-    margin: 25px auto;
+  width: 94%;
+  max-width: 1500px;
+  margin: 25px auto;
 
-    background: #061b29;
+  background: #061b29;
 
-    border: 1px solid rgba(0, 171, 240, 0.25);
-    border-radius: 25px;
+  border: 1px solid rgba(0, 171, 240, 0.25);
+  border-radius: 25px;
 
-    overflow: hidden;
+  overflow: hidden;
 
-    box-shadow:
-        0 0 50px rgba(0, 171, 240, 0.08);
+  box-shadow: 0 0 50px rgba(0, 171, 240, 0.08);
 }
-
 
 /* =========================
    NAVBAR
 ========================= */
 
 .navbar {
-    position: sticky;
-    top: 0;
+  position: sticky;
+  top: 0;
 
-    z-index: 1000;
+  z-index: 1000;
 
-    height: 80px;
+  height: 80px;
 
-    padding: 0 6%;
+  padding: 0 6%;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    background: #061b29;
+  background: #061b29;
 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .logo {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 
-    font-size: 27px;
-    font-weight: bold;
+  font-size: 27px;
+  font-weight: bold;
 }
 
 .logo span {
-    color: #00abf0;
+  color: #00abf0;
 }
 
 nav {
-    display: flex;
-    gap: 35px;
+  display: flex;
+  gap: 35px;
 }
 
 nav a {
-    position: relative;
+  position: relative;
 
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 
-    font-size: 15px;
+  font-size: 15px;
 
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 nav a:hover,
 nav a.active {
-    color: #00abf0;
+  color: #00abf0;
 }
 
 nav a.active::after {
-    content: "";
+  content: "";
 
-    position: absolute;
+  position: absolute;
 
-    left: 0;
-    bottom: -10px;
+  left: 0;
+  bottom: -10px;
 
-    width: 100%;
-    height: 2px;
+  width: 100%;
+  height: 2px;
 
-    background: #00abf0;
+  background: #00abf0;
 }
-
 
 /* =========================
    HOME
 ========================= */
 
 .home {
-    min-height: 720px;
+  min-height: 720px;
 
-    padding: 80px 6%;
+  padding: 1px 6%;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    position: relative;
-}
-
-.home-content {
-    width: 53%;
-    z-index: 5;
+  position: relative;
 }
 
 .hello {
-    color: #00abf0;
+  color: #00abf0;
 
-    font-size: 13px;
-    font-weight: bold;
+  font-size: 13px;
+  font-weight: bold;
 
-    letter-spacing: 3px;
+  letter-spacing: 3px;
 
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 }
 
 .home h1 {
-    font-size: 60px;
-    line-height: 1.1;
+  font-size: 60px;
+  line-height: 1.1;
 
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .home h1 span {
-    display: block;
+  display: block;
 }
 
 .home h2 {
-    color: #00abf0;
+  color: #00abf0;
 
-    font-size: 34px;
+  font-size: 34px;
 
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .description {
-    max-width: 620px;
+  max-width: 620px;
 
-    color: #c8d5dc;
+  color: #c8d5dc;
 
-    font-size: 17px;
+  font-size: 17px;
 
-    line-height: 1.8;
+  line-height: 1.8;
 
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 }
-
 
 /* =========================
    BUTTONS
 ========================= */
 
 .buttons {
-    display: flex;
-    gap: 18px;
+  display: flex;
+  gap: 18px;
 
-    margin-bottom: 65px;
+  margin-bottom: 25px;
 }
 
 .btn {
-    min-width: 145px;
-    height: 50px;
+  min-width: 145px;
+  height: 50px;
 
-    padding: 0 25px;
+  padding: 0 25px;
 
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
-    border-radius: 7px;
+  border-radius: 7px;
 
-    text-decoration: none;
+  text-decoration: none;
 
-    font-weight: bold;
+  font-weight: bold;
 
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .primary {
-    background: #00abf0;
+  background: #00abf0;
 
-    border: 2px solid #00abf0;
+  border: 2px solid #00abf0;
 
-    color: #03121c;
+  color: #03121c;
 }
 
 .primary:hover {
-    background: transparent;
-    color: #00abf0;
+  background: transparent;
+  color: #00abf0;
 
-    transform: translateY(-3px);
+  transform: translateY(-3px);
 }
 
 .secondary {
-    background: transparent;
+  background: transparent;
 
-    border: 2px solid #00abf0;
+  border: 2px solid #00abf0;
 
-    color: #00abf0;
+  color: #00abf0;
 }
 
 .secondary:hover {
-    background: #00abf0;
+  background: #00abf0;
 
-    color: #03121c;
+  color: #03121c;
 
-    transform: translateY(-3px);
+  transform: translateY(-3px);
 }
-
 
 /* =========================
    SOCIAL ICONS
 ========================= */
 
 .social-icons {
-    display: flex;
-    gap: 18px;
+  display: flex;
+  gap: 1px 10px;
 }
 
 .social-icons a {
-    width: 44px;
-    height: 44px;
+  width: 44px;
+  height: 44px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    border: 2px solid #00abf0;
-    border-radius: 50%;
+  border: 2px solid #00abf0;
+  border-radius: 50%;
 
-    color: #00abf0;
+  color: #00abf0;
 
-    text-decoration: none;
+  text-decoration: none;
 
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .social-icons a:hover {
-    background: #00abf0;
+  background: #00abf0;
 
-    color: #03121c;
+  color: #03121c;
 
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
-
 
 /* =========================
    HOME IMAGE
 ========================= */
 
 .home-image {
-    width: 44%;
+  width: 44%;
 
-    min-height: 600px;
+  min-height: 600px;
 
-    position: relative;
+  position: relative;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home-image img {
-    width: 100%;
-    max-width: 520px;
+  width: 100%;
+  max-width: 520px;
 
-    position: relative;
+  position: relative;
 
-    z-index: 4;
+  z-index: 4;
 
-    object-fit: contain;
+  object-fit: contain;
 
-    filter:
-        drop-shadow(0 20px 35px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.4));
 }
 
 .glow {
-    position: absolute;
+  position: absolute;
 
-    width: 400px;
-    height: 400px;
+  width: 400px;
+  height: 400px;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    background: #00abf0;
+  background: #00abf0;
 
-    filter: blur(100px);
+  filter: blur(100px);
 
-    opacity: 0.4;
+  opacity: 0.4;
 
-    z-index: 1;
+  z-index: 1;
 }
 
 .orbit {
-    position: absolute;
+  position: absolute;
 
-    border: 1px solid rgba(0, 171, 240, 0.4);
+  border: 1px solid rgba(0, 171, 240, 0.4);
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    z-index: 2;
+  z-index: 2;
 }
 
 .orbit-one {
-    width: 470px;
-    height: 470px;
+  width: 470px;
+  height: 470px;
 }
 
 .orbit-two {
-    width: 560px;
-    height: 560px;
+  width: 560px;
+  height: 560px;
 
-    border-color: rgba(0, 171, 240, 0.15);
+  border-color: rgba(0, 171, 240, 0.15);
 }
 
 .dot {
-    position: absolute;
+  position: absolute;
 
-    width: 10px;
-    height: 10px;
+  width: 10px;
+  height: 10px;
 
-    background: #00abf0;
+  background: #00abf0;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    box-shadow: 0 0 15px #00abf0;
+  box-shadow: 0 0 15px #00abf0;
 
-    z-index: 3;
+  z-index: 3;
 }
 
 .dot-one {
-    top: 120px;
-    right: 60px;
+  top: 120px;
+  right: 60px;
 }
 
 .dot-two {
-    left: 30px;
-    top: 260px;
+  left: 30px;
+  top: 260px;
 }
 
 .dot-three {
-    right: 40px;
-    bottom: 120px;
+  right: 40px;
+  bottom: 120px;
 }
-
 
 /* ==================================================
    GENERAL SECTIONS
 ================================================== */
 
 .section {
-    min-height: 650px;
+  min-height: 650px;
 
-    padding: 120px 8%;
+  padding: 120px 8%;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .section-content {
-    width: 100%;
-    max-width: 1100px;
+  width: 100%;
+  max-width: 1100px;
 
-    margin: 0 auto;
+  margin: 0 auto;
 }
-
 
 /* =========================
    SECTION TITLE
 ========================= */
 
 .section-label {
-    color: #00abf0;
+  color: #00abf0;
 
-    font-size: 13px;
+  font-size: 13px;
 
-    font-weight: bold;
+  font-weight: bold;
 
-    letter-spacing: 3px;
+  letter-spacing: 3px;
 
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 }
 
 .section h2 {
-    font-size: 48px;
+  font-size: 48px;
 
-    line-height: 1.2;
+  line-height: 1.2;
 
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .section h2 span {
-    color: #00abf0;
+  color: #00abf0;
 }
-
 
 /* =========================
    SECTION PARAGRAPH
 ========================= */
 
 .section-content > p:not(.section-label) {
-    max-width: 750px;
+  max-width: 750px;
 
-    color: #b9c8d0;
+  color: #b9c8d0;
 
-    font-size: 17px;
+  font-size: 17px;
 
-    line-height: 1.9;
+  line-height: 1.9;
 
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
-
 
 /* ==================================================
    ABOUT
 ================================================== */
 
 #about {
-    min-height: 600px;
+  min-height: 600px;
 
-    padding-top: 140px;
-    padding-bottom: 140px;
+  padding-top: 140px;
+  padding-bottom: 140px;
 }
-
 
 /* ==================================================
 SKILLS SECTION
 ================================================== */
 
 .skills-section {
-padding: 120px 8%;
+  padding: 120px 8%;
 
-background: #061b29;
+  background: #061b29;
 
-border-top: 1px solid rgba(255, 255, 255, 0.06);
-
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 /* =========================
@@ -473,62 +454,57 @@ SKILLS TITLE
 ========================= */
 
 .section-title {
-max-width: 850px;
+  max-width: 850px;
 
-margin: 0 auto 55px;
+  margin: 0 auto 55px;
 
-text-align: center;
-
+  text-align: center;
 }
 
 .section-title span {
-display: block;
+  display: block;
 
-color: #00abf0;
+  color: #00abf0;
 
-font-size: 13px;
+  font-size: 13px;
 
-font-weight: bold;
+  font-weight: bold;
 
-letter-spacing: 3px;
+  letter-spacing: 3px;
 
-text-transform: uppercase;
+  text-transform: uppercase;
 
-margin-bottom: 15px;
-
+  margin-bottom: 15px;
 }
 
 .section-title h2 {
-color: white;
+  color: white;
 
-font-size: 44px;
+  font-size: 44px;
 
-line-height: 1.2;
+  line-height: 1.2;
 
-margin-bottom: 22px;
-
+  margin-bottom: 22px;
 }
 
 .section-title h2 span {
-display: inline;
+  display: inline;
 
-color: #00abf0;
+  color: #00abf0;
 
-font-size: inherit;
+  font-size: inherit;
 
-letter-spacing: 0;
+  letter-spacing: 0;
 
-text-transform: none;
-
+  text-transform: none;
 }
 
 .section-title p {
-color: #b9c8d0;
+  color: #b9c8d0;
 
-font-size: 16px;
+  font-size: 16px;
 
-line-height: 1.8;
-
+  line-height: 1.8;
 }
 
 /* ==================================================
@@ -536,18 +512,17 @@ SKILLS GRID
 ================================================== */
 
 .skills-container {
-width: 100%;
+  width: 100%;
 
-max-width: 1100px;
+  max-width: 1100px;
 
-margin: 0 auto;
+  margin: 0 auto;
 
-display: grid;
+  display: grid;
 
-grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
-gap: 22px;
-
+  gap: 22px;
 }
 
 /* ==================================================
@@ -555,32 +530,29 @@ SKILL CARD
 ================================================== */
 
 .skill-card {
-min-height: 260px;
+  min-height: 260px;
 
-padding: 30px;
+  padding: 30px;
 
-display: flex;
+  display: flex;
 
-flex-direction: column;
+  flex-direction: column;
 
-background: rgba(0, 171, 240, 0.035);
+  background: rgba(0, 171, 240, 0.035);
 
-border: 1px solid rgba(0, 171, 240, 0.18);
+  border: 1px solid rgba(0, 171, 240, 0.18);
 
-border-radius: 16px;
+  border-radius: 16px;
 
-transition: 0.3s ease;
-
+  transition: 0.3s ease;
 }
 
 .skill-card:hover {
-transform: translateY(-8px);
+  transform: translateY(-8px);
 
-border-color: #00abf0;
+  border-color: #00abf0;
 
-box-shadow:
-    0 15px 40px rgba(0, 171, 240, 0.12);
-
+  box-shadow: 0 15px 40px rgba(0, 171, 240, 0.12);
 }
 
 /* ==================================================
@@ -588,28 +560,27 @@ SKILL ICON
 ================================================== */
 
 .skill-icon {
-width: 55px;
+  width: 55px;
 
-height: 55px;
+  height: 55px;
 
-display: flex;
+  display: flex;
 
-align-items: center;
+  align-items: center;
 
-justify-content: center;
+  justify-content: center;
 
-margin-bottom: 22px;
+  margin-bottom: 22px;
 
-border: 1px solid rgba(0, 171, 240, 0.25);
+  border: 1px solid rgba(0, 171, 240, 0.25);
 
-border-radius: 12px;
+  border-radius: 12px;
 
-background: rgba(0, 171, 240, 0.07);
+  background: rgba(0, 171, 240, 0.07);
 
-color: #00abf0;
+  color: #00abf0;
 
-font-size: 27px;
-
+  font-size: 27px;
 }
 
 /* ==================================================
@@ -617,12 +588,11 @@ SKILL TITLE
 ================================================== */
 
 .skill-card h3 {
-color: white;
+  color: white;
 
-font-size: 30;
+  font-size: 30;
 
-margin-bottom: 30px;
-
+  margin-bottom: 30px;
 }
 
 /* ==================================================
@@ -630,38 +600,35 @@ SKILL TAGS
 ================================================== */
 
 .skill-list {
-display: flex;
+  display: flex;
 
-flex-wrap: wrap;
+  flex-wrap: wrap;
 
-gap: 9px;
-
+  gap: 9px;
 }
 
 .skill-list span {
-padding: 7px 11px;
+  padding: 7px 11px;
 
-color: #00abf0;
+  color: #00abf0;
 
-background: rgba(0, 171, 240, 0.07);
+  background: rgba(0, 171, 240, 0.07);
 
-border: 1px solid rgba(0, 171, 240, 0.20);
+  border: 1px solid rgba(0, 171, 240, 0.2);
 
-border-radius: 20px;
+  border-radius: 20px;
 
-font-size: 11px;
+  font-size: 11px;
 
-font-weight: bold;
+  font-weight: bold;
 
-transition: 0.3s ease;
-
+  transition: 0.3s ease;
 }
 
 .skill-card:hover .skill-list span {
-border-color: rgba(0, 171, 240, 0.45);
+  border-color: rgba(0, 171, 240, 0.45);
 
-background: rgba(0, 171, 240, 0.10);
-
+  background: rgba(0, 171, 240, 0.1);
 }
 
 /* ==================================================
@@ -669,77 +636,65 @@ SKILLS RESPONSIVE
 ================================================== */
 
 @media (max-width: 950px) {
-
-.skills-container {
+  .skills-container {
     grid-template-columns: repeat(2, 1fr);
-}
-
+  }
 }
 
 @media (max-width: 700px) {
-
-.skills-section {
+  .skills-section {
     padding: 100px 7%;
-}
+  }
 
-.section-title {
+  .section-title {
     margin-bottom: 40px;
-}
+  }
 
-.section-title h2 {
+  .section-title h2 {
     font-size: 40px;
-}
+  }
 
-.section-title p {
+  .section-title p {
     font-size: 15px;
-}
+  }
 
-.skills-container {
+  .skills-container {
     grid-template-columns: 1fr;
 
     gap: 20px;
-}
+  }
 
-.skill-card {
+  .skill-card {
     min-height: auto;
 
     padding: 25px;
-}
-
-
+  }
 }
 
 @media (max-width: 500px) {
-
-
-.section-title h2 {
+  .section-title h2 {
     font-size: 32px;
-}
+  }
 
-.skill-card h3 {
+  .skill-card h3 {
     font-size: 19px;
+  }
 }
-
-
-}
-
-
 
 /* ==================================================
    PORTFOLIO
 ================================================== */
 
 #portfolio-section {
-    min-height: 700px;
+  min-height: 700px;
 
-    padding-top: 120px;
-    padding-bottom: 140px;
+  padding-top: 120px;
+  padding-bottom: 140px;
 }
 
 .project {
-    min-height: 270px;
+  min-height: 270px;
 }
-
 
 /* ==================================================
    CONTACT
@@ -750,527 +705,512 @@ SKILLS RESPONSIVE
 ========================= */
 
 .contact {
-    min-height: 650px;
+  min-height: 650px;
 
-    padding: 120px 8%;
+  padding: 120px 8%;
 
-    text-align: center;
+  text-align: center;
 }
-
 
 .contact .section-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 
 .contact .section-label {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
-
 
 .contact h2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-
 
 .contact-text {
-    max-width: 600px;
+  max-width: 600px;
 
-    color: #b9c8d0;
+  color: #b9c8d0;
 
-    font-size: 17px;
+  font-size: 17px;
 
-    line-height: 1.8;
+  line-height: 1.8;
 
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
-
 
 /* =========================
    CONTACT BUTTON
 ========================= */
 
 .contact .btn {
-    margin-bottom: 55px;
+  margin-bottom: 55px;
 }
-
 
 /* =========================
    CONTACT LINKS
 ========================= */
 
 .contact-links {
-    width: 100%;
-    max-width: 900px;
+  width: 100%;
+  max-width: 900px;
 
-    display: grid;
+  display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 
-    gap: 20px;
+  gap: 20px;
 }
-
 
 .contact-item {
-    min-height: 130px;
+  min-height: 130px;
 
-    padding: 25px 15px;
+  padding: 25px 15px;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 
-    text-decoration: none;
+  text-decoration: none;
 
-    background: rgba(0, 171, 240, 0.035);
+  background: rgba(0, 171, 240, 0.035);
 
-    border: 1px solid rgba(0, 171, 240, 0.18);
+  border: 1px solid rgba(0, 171, 240, 0.18);
 
-    border-radius: 15px;
+  border-radius: 15px;
 
-    transition: 0.3s;
+  transition: 0.3s;
 }
-
 
 .contact-item i {
-    color: #00abf0;
+  color: #00abf0;
 
-    font-size: 28px;
+  font-size: 28px;
 
-    margin-bottom: 13px;
+  margin-bottom: 13px;
 }
-
 
 .contact-item span {
-    display: block;
+  display: block;
 
-    color: white;
+  color: white;
 
-    font-size: 15px;
+  font-size: 15px;
 
-    font-weight: bold;
+  font-weight: bold;
 
-    margin-bottom: 7px;
+  margin-bottom: 7px;
 }
-
 
 .contact-item p {
-    color: #8fa5b0;
+  color: #8fa5b0;
 
-    font-size: 13px;
+  font-size: 13px;
 }
-
 
 .contact-item:hover {
-    transform: translateY(-7px);
+  transform: translateY(-7px);
 
-    border-color: #00abf0;
+  border-color: #00abf0;
 
-    box-shadow:
-        0 12px 35px rgba(0, 171, 240, 0.12);
+  box-shadow: 0 12px 35px rgba(0, 171, 240, 0.12);
 }
-
 
 /* =========================
    CONTACT RESPONSIVE
 ========================= */
 
 @media (max-width: 850px) {
-
-    .contact-links {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
+  .contact-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-
 @media (max-width: 500px) {
+  .contact {
+    padding: 90px 7%;
+  }
 
-    .contact {
-        padding: 90px 7%;
-    }
+  .contact-links {
+    grid-template-columns: 1fr;
+  }
 
+  .contact-item {
+    min-height: 100px;
 
-    .contact-links {
-        grid-template-columns: 1fr;
-    }
+    flex-direction: row;
 
+    justify-content: flex-start;
 
-    .contact-item {
-        min-height: 100px;
+    gap: 18px;
 
-        flex-direction: row;
+    padding: 20px;
+  }
 
-        justify-content: flex-start;
-
-        gap: 18px;
-
-        padding: 20px;
-    }
-
-
-    .contact-item i {
-        margin-bottom: 0;
-    }
-
+  .contact-item i {
+    margin-bottom: 0;
+  }
 }
 /* ==================================================
    FOOTER
 ================================================== */
 
 footer {
-    padding: 30px;
+  padding: 30px;
 
-    text-align: center;
+  text-align: center;
 
-    color: #71838d;
+  color: #71838d;
 
-    font-size: 14px;
+  font-size: 14px;
 
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
-
 
 /* ==================================================
    RESPONSIVE
 ================================================== */
 
 @media (max-width: 950px) {
+  .home {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 
-    .home {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
+  .home h1 {
+    font-size: 45px;
+  }
 
-    .home h1 {
-        font-size: 45px;
-    }
+  .home h2 {
+    font-size: 28px;
+  }
 
-    .home h2 {
-        font-size: 28px;
-    }
+  .cards {
+    grid-template-columns: 1fr;
+  }
 
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
-    .card {
-        min-height: 220px;
-    }
+  .card {
+    min-height: 220px;
+  }
 }
 
-
 @media (max-width: 700px) {
+  .portfolio {
+    width: 100%;
+    margin: 0;
 
-    .portfolio {
-        width: 100%;
-        margin: 0;
+    border-radius: 0;
+  }
 
-        border-radius: 0;
-    }
+  .navbar {
+    height: auto;
 
-    .navbar {
-        height: auto;
+    padding: 22px 6%;
 
-        padding: 22px 6%;
+    flex-direction: column;
 
-        flex-direction: column;
+    gap: 20px;
+  }
 
-        gap: 20px;
-    }
+  nav {
+    gap: 15px;
 
-    nav {
-        gap: 15px;
+    flex-wrap: wrap;
 
-        flex-wrap: wrap;
+    justify-content: center;
+  }
 
-        justify-content: center;
-    }
+  nav a.active::after {
+    display: none;
+  }
 
-    nav a.active::after {
-        display: none;
-    }
+  /* HOME */
 
+  .home {
+    padding: 70px 7% 50px;
 
-    /* HOME */
+    flex-direction: column;
 
-    .home {
-        padding: 70px 7% 50px;
+    text-align: center;
+  }
 
-        flex-direction: column;
+  .home-content {
+    width: 100%;
+  }
 
-        text-align: center;
-    }
+  .home h1 {
+    font-size: 40px;
+  }
 
-    .home-content {
-        width: 100%;
-    }
+  .home h1 span {
+    display: inline;
+  }
 
-    .home h1 {
-        font-size: 40px;
-    }
+  .home h2 {
+    font-size: 27px;
+  }
 
-    .home h1 span {
-        display: inline;
-    }
+  .description {
+    font-size: 15px;
+  }
 
-    .home h2 {
-        font-size: 27px;
-    }
+  .buttons,
+  .social-icons {
+    justify-content: center;
+  }
 
-    .description {
-        font-size: 15px;
-    }
+  .buttons {
+    margin-bottom: 40px;
+  }
 
-    .buttons,
-    .social-icons {
-        justify-content: center;
-    }
+  .home-image {
+    width: 100%;
 
-    .buttons {
-        margin-bottom: 40px;
-    }
+    min-height: 480px;
 
-    .home-image {
-        width: 100%;
+    margin-top: 40px;
+  }
 
-        min-height: 480px;
+  /* SECTIONS */
 
-        margin-top: 40px;
-    }
+  .section {
+    min-height: auto;
 
+    padding: 100px 7%;
+  }
 
-    /* SECTIONS */
+  #about,
+  #services,
+  #portfolio-section,
+  .contact {
+    min-height: auto;
 
-    .section {
-        min-height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 
-        padding: 100px 7%;
-    }
+  .section h2 {
+    font-size: 36px;
+  }
 
-    #about,
-    #services,
-    #portfolio-section,
-    .contact {
-        min-height: auto;
+  .section-content > p:not(.section-label) {
+    font-size: 15px;
+  }
 
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
+  /* CARDS */
 
-    .section h2 {
-        font-size: 36px;
-    }
+  .cards {
+    margin-top: 40px;
 
-    .section-content > p:not(.section-label) {
-        font-size: 15px;
-    }
+    grid-template-columns: 1fr;
 
+    gap: 20px;
+  }
 
-    /* CARDS */
+  .card {
+    padding: 28px;
 
-    .cards {
-        margin-top: 40px;
-
-        grid-template-columns: 1fr;
-
-        gap: 20px;
-    }
-
-    .card {
-        padding: 28px;
-
-        min-height: auto;
-    }
+    min-height: auto;
+  }
 }
 /* =========================
    PROJECT CARD
 ========================= */
 
 .project {
-    min-height: 400px;
-    padding: 32px;
+  min-height: 400px;
+  padding: 32px;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    background: rgba(0, 171, 240, 0.035);
+  background: rgba(0, 171, 240, 0.035);
 
-    border: 1px solid rgba(0, 171, 240, 0.18);
-    border-radius: 16px;
+  border: 1px solid rgba(0, 171, 240, 0.18);
+  border-radius: 16px;
 
-    transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .project:hover {
-    transform: translateY(-8px);
+  transform: translateY(-8px);
 
-    border-color: #00abf0;
+  border-color: #00abf0;
 
-    box-shadow: 0 15px 40px rgba(0, 171, 240, 0.12);
+  box-shadow: 0 15px 40px rgba(0, 171, 240, 0.12);
 }
-
 
 /* Project icon */
 
 .project > i {
-    color: #00abf0;
+  color: #00abf0;
 
-    font-size: 32px;
+  font-size: 32px;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-
 
 /* Project title */
 
 .project h3 {
-    color: white;
+  color: white;
 
-    font-size: 21px;
+  font-size: 21px;
 
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
-
 
 /* Project description */
 
 .project > p {
-    color: #aebfc8;
+  color: #aebfc8;
 
-    font-size: 14px;
+  font-size: 14px;
 
-    line-height: 1.7;
+  line-height: 1.7;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-
 
 /* =========================
    TECHNOLOGY TAGS
 ========================= */
 
 .tech-stack {
-    display: flex;
+  display: flex;
 
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 
-    gap: 8px;
+  gap: 8px;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .tech-stack span {
-    padding: 6px 10px;
+  padding: 6px 10px;
 
-    color: #00abf0;
+  color: #00abf0;
 
-    background: rgba(0, 171, 240, 0.08);
+  background: rgba(0, 171, 240, 0.08);
 
-    border: 1px solid rgba(0, 171, 240, 0.25);
+  border: 1px solid rgba(0, 171, 240, 0.25);
 
-    border-radius: 20px;
+  border-radius: 20px;
 
-    font-size: 11px;
+  font-size: 11px;
 
-    font-weight: bold;
+  font-weight: bold;
 }
 
+.live {
+  margin-left: auto;
+}
+.live a {
+  padding: 6px 10px;
+
+  color: #16e124;
+
+  background: rgba(0, 171, 240, 0.08);
+
+  border: 1px solid rgba(0, 171, 240, 0.25);
+
+  border-radius: 20px;
+
+  font-size: 15px;
+
+  font-weight: bold;
+
+  text-decoration: none;
+}
 
 /* =========================
    PROJECT FEATURES
 ========================= */
 
 .project ul {
-    list-style: none;
+  list-style: none;
 
-    margin-top: auto;
+  margin-top: auto;
 }
 
 .project ul li {
-    color: #9fb1bb;
+  color: #9fb1bb;
 
-    font-size: 13px;
+  font-size: 13px;
 
-    line-height: 1.7;
+  line-height: 1.7;
 
-    margin-bottom: 6px;
+  margin-bottom: 6px;
 }
 
 .project ul li::before {
-    content: "✓";
+  content: "✓";
 
-    color: #00abf0;
+  color: #00abf0;
 
-    font-weight: bold;
+  font-weight: bold;
 
-    margin-right: 9px;
+  margin-right: 9px;
 }
-
 
 /* =========================
    HOVER TECHNOLOGY
 ========================= */
 
 .project:hover .tech-stack span {
-    border-color: rgba(0, 171, 240, 0.5);
+  border-color: rgba(0, 171, 240, 0.5);
 }
-
 
 /* =========================
    MOBILE
 ========================= */
 
 @media (max-width: 700px) {
+  .project {
+    min-height: auto;
 
-    .project {
-        min-height: auto;
+    padding: 25px;
+  }
 
-        padding: 25px;
-    }
+  .project h3 {
+    font-size: 19px;
+  }
 
-    .project h3 {
-        font-size: 19px;
-    }
+  .project > p {
+    font-size: 14px;
+  }
 
-    .project > p {
-        font-size: 14px;
-    }
+  .tech-stack span {
+    font-size: 10px;
+  }
 
-    .tech-stack span {
-        font-size: 10px;
-    }
-
-    .project ul li {
-        font-size: 12px;
-    }
+  .project ul li {
+    font-size: 12px;
+  }
 }
 /* =========================
    PROJECT STATUS
 ========================= */
 
 .project-status {
-    display: inline-block;
+  display: inline-block;
 
-    width: fit-content;
+  width: fit-content;
 
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 
-    padding: 5px 10px;
+  padding: 5px 10px;
 
-    border-radius: 20px;
+  border-radius: 20px;
 
-    font-size: 11px;
+  font-size: 11px;
 
-    font-weight: bold;
+  font-weight: bold;
 
-    color: #00abf0;
+  color: #00abf0;
 
-    background: rgba(0, 171, 240, 0.08);
+  background: rgba(0, 171, 240, 0.08);
 
-    border: 1px solid rgba(0, 171, 240, 0.25);
+  border: 1px solid rgba(0, 171, 240, 0.25);
 }
