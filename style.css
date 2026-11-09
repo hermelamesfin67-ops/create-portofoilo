@@ -275,13 +275,13 @@ nav a.active::after {
 
   display: flex;
   align-items: center;
+  
   justify-content: center;
 }
 
 .home-image img {
   width: 100%;
   max-width: 520px;
-
   position: relative;
 
   z-index: 4;
@@ -310,12 +310,13 @@ nav a.active::after {
 
 .orbit {
   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-  border: 1px solid rgba(0, 171, 240, 0.4);
-
-  border-radius: 50%;
-
-  z-index: 2;
+    border: 1px solid rgba(0, 171, 240, 0.4);
+    border-radius: 50%;
+    z-index: 2;
 }
 
 .orbit-one {
